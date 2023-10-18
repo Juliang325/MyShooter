@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - GanAmmo
+  - GunAmmo
   layers:
   - Default
   - TransparentFX

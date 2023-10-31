@@ -64,6 +64,37 @@ Transform:
   - {fileID: 389532453047941958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4073601096977606078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3093771149340949662}
+  m_Layer: 0
+  m_Name: EnemySpawnBullet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3093771149340949662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073601096977606078}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389532453047941958}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7146560407577118593
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +583,7 @@ GameObject:
   - component: {fileID: 7530614895389342990}
   - component: {fileID: 5987237814982208795}
   - component: {fileID: 6000007385324602246}
+  - component: {fileID: 2701407733547934154}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -573,6 +605,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7146560407577484201}
+  - {fileID: 3093771149340949662}
   m_Father: {fileID: 4290957740136257737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5431118447453357458
@@ -693,6 +726,21 @@ MonoBehaviour:
   distanceToFollowPath: 2
   followPlayer: 1
   distanceToFollowPlayer: 10
+--- !u!114 &2701407733547934154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7731729031035224961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d77d1e4ac265444f8e75f1de4ab7784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyBullet: {fileID: 6907864614242253545, guid: e6c01e3494c217a42a87504d9253c781, type: 3}
+  spawnBulletPoint: {fileID: 3093771149340949662}
+  bulletVelocity: 100
 --- !u!1 &8148928257797263685
 GameObject:
   m_ObjectHideFlags: 0

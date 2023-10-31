@@ -8,6 +8,7 @@ TagManager:
   - GunAmmo
   - GanAmmo
   - DeathFloor
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

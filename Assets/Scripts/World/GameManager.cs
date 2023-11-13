@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         if (health<=0)
         {
             Debug.Log("Has muerto");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }
